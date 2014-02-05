@@ -11,5 +11,8 @@ linux:
 osx:
 	cc -Wall -g -o klvgen main.c
 
+win32:
+	cc -Wall -o klvgen.exe klvgen.c -D WIN32 -lwsock32
+
 clean:
 	rm -rf klvgen *.dSYM
